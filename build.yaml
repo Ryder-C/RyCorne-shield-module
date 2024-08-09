@@ -17,3 +17,26 @@
 #     artifact-name: corne_left_with_logging
 #
 ---
+include:
+  - board: nice_nano_v2
+    shield: ezboard_left nice_view
+    artifact-name: ezboard_left
+  - board: nice_nano_v2
+    shield: ezboard_right nice_view
+    artifact-name: ezboard_right
+  - board: nice_nano_v2
+    shield: ezboard_left nice_view
+    cmake-args: -DCONFIG_ZMK_USB_LOGGING=y
+    artifact-name: ezboard_left_with_logging
+  - board: nice_nano_v2
+    shield: ezboard_right nice_view
+    cmake-args: -DCONFIG_ZMK_USB_LOGGING=y
+    artifact-name: ezboard_right_with_logging
+  - board: nice_nano_v2
+    shield: ezboard_left nice_view
+    cmake-args: -DCONFIG_ZMK_BLE_EXPERIMENTAL_CONN=y
+    artifact-name: ezboard_left_ble_experimental
+  - board: nice_nano_v2
+    shield: ezboard_right nice_view
+    cmake-args: -DCONFIG_ZMK_BLE_EXPERIMENTAL_CONN=y
+    artifact-name: ezboard_right_ble_experimental

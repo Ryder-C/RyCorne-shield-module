@@ -1,0 +1,5 @@
+config SHIELD_CORNEY_ISLAND_LEFT
+    def_bool $(shields_list_contains,ezboard_left)
+
+config SHIELD_CORNEY_ISLAND_RIGHT
+    def_bool $(shields_list_contains,ezboard_right)
