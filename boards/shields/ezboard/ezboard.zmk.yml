@@ -1,8 +1,8 @@
 file_format: "1"
 id: ezboard
-name: Corney Island
+name: EzBoard
 type: shield
-url: https://github.com/ceoloide/corney-island/
+url: https://gitlab.deep-nope.me/mnivoliez/ezboard
 requires: [pro_micro, i2c_oled]
 exposes: [nice_view_header]
 features:
